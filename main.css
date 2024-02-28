@@ -1,0 +1,18 @@
+.social-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.facebook-button, .instagram-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b5998; /* Facebook blue */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.instagram-button {
+    background-color: #e4405f; /* Instagram pink */
+}
