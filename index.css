@@ -12,10 +12,18 @@ a:hover {
 header {
     background-color: #333;
     color: #fff;
-    padding: 60px;
+    padding: 90px;
     text-align: center;
 }
-
+img {
+    position: absolute;
+    left: 12%; /* Adjust the left position as needed */
+    top: 15%; /* Align image vertically */
+    transform: translateY(-50%);
+    width: 200px; /* Set width to 100px */
+    height: 200px; /* Set height to 100px */
+    border-radius: 50%; /* Make the image round */
+}
 h1 {
     margin: 0;
     font-size: 36px;
@@ -73,6 +81,7 @@ background-color: #e4405f;
 }
 
 .experience-container {
+    min-width: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
