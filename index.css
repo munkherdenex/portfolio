@@ -29,6 +29,21 @@ h1 {
     font-size: 36px;
 }
 
+.header h1 {
+    position: relative; /* Ensure text stays on top of the image */
+    z-index: 1; /* Place text in front of the image */
+}
+
+.header img.header-image {
+    position: absolute; /* Position the image absolutely */
+    top: 0; /* Align image to the top of the header */
+    left: 0; /* Align image to the left of the header */
+    width: 100%; /* Ensure the image fills the entire width of the header */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 0; /* Set a lower z-index than the text */
+}
+
+
 nav {
     background-color: #666;
     padding: 10px;
@@ -89,6 +104,7 @@ background-color: #e4405f;
 
 .experience-item {
     background-color: #fff;
+    min-width: 350px;
     box-shadow: 0 0 5px rgba(0,0,0,0.2);
     margin-bottom: 20px; 
     flex-basis: calc(33.333% - 20px);
