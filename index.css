@@ -5,11 +5,14 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+a:hover {
+    background-color: lightslategray;
+}
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 60px;
     text-align: center;
 }
 
@@ -65,6 +68,28 @@ margin-right: 10px;
 background-color: #e4405f; /* Instagram pink */
 }
 
-#contact {
-    font-style: italic;
+#experience {
+    padding: 20px;
 }
+
+.experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust this as needed for spacing */
+}
+
+.experience-item {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    margin-bottom: 20px; /* Space between rows */
+    flex-basis: calc(33.333% - 20px); /* Adjust width for 3 items per row, accounting for margin */
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+h2 {
+    color: #333;
+}
+
+
