@@ -91,12 +91,45 @@ margin-right: 10px;
 background-color: #e4405f; 
 }
 
+#education {
+    padding: 20px;
+}
+.education {
+    justify-content: space-between; 
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    margin-bottom: 20px; 
+    min-width: 305px;
+    max-width: 445px;
+    width: 48%; 
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    flex-basis: calc(33.333% - 20px);
+}
+
+.education-item h3 {
+    text-align: center;
+    margin-top: 0; 
+    background-color: rgb(235, 235, 235);
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 280px;
+}
+
+.education-item p {
+    margin: 5px 0; 
+}
+
 #experience {
     padding: 20px;
 }
 
 .experience-container {
-    min-width: 305px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; 
@@ -119,4 +152,39 @@ h2 {
 
 html {scroll-behavior: smooth;}
 
+.project {
+    width: 200px;
+    height: 160px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hovering effect */
+    margin: 20px; 
+}
+
+.project h3,
+.project p {
+    text-align: center;
+    padding: 10px;
+}
+
+.project:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.project a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: #007bff; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.project a:hover {
+    background-color: #0056b3; 
+}
 
