@@ -160,7 +160,7 @@ html {scroll-behavior: smooth;}
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hovering effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin: 20px; 
 }
 
