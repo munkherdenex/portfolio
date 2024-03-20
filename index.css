@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+
 a:hover {
     background-color: lightslategray;
 }
@@ -42,8 +43,16 @@ nav a {
 section {
     padding: 20px;
     margin: 20px;
+    margin-left: 190px;
+    margin-right: 190px;
     background-color: #fff;
     border-radius: 5px;
+}
+@media (max-width: 767px) {
+    section {
+        margin-left: 0; 
+        margin-right: 0; 
+    }
 }
 
 footer {
