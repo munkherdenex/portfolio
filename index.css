@@ -25,13 +25,6 @@ header h1 {
     position: relative;
     z-index: 1;
 }
-.section-image img {
-    justify-content: space-between; 
-    position: absolute;
-}
-.pictures {
-    position: inherit;
-}
 
 nav {
     background-color: #446076;
