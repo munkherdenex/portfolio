@@ -25,6 +25,7 @@ h1 {
 header h1 {
     position: relative;
     z-index: 1;
+    font-size: 55px;
 }
 
 nav {
