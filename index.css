@@ -13,19 +13,20 @@ a:hover {
 header {
     background-color: #3a5266;
     color: #fff;
-    padding: 90px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     text-align: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 36px;
 }
 
 header h1 {
     position: relative;
     z-index: 1;
-    font-size: 55px;
+    font-size: 50px;
+}
+@media (max-width: 450px) {
+    header h1 {
+        font-size: 38px;
+    }
 }
 
 nav {
@@ -49,6 +50,7 @@ section {
     background-color: #fff;
     border-radius: 5px;
 }
+
 @media (max-width: 767px) {
     section {
         margin-left: 0; 
