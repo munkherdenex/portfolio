@@ -157,7 +157,7 @@ h2 {
 
 html {scroll-behavior: smooth;}
 
-.project {
+.project_1 {
     width: 200px;
     height: 160px;
     background-color: #f0f0f0;
@@ -168,18 +168,18 @@ html {scroll-behavior: smooth;}
     margin: 20px; 
 }
 
-.project h3,
-.project p {
+.project_1 h3,
+.project_1 p {
     text-align: center;
     padding: 10px;
 }
 
-.project:hover {
+.project_1:hover {
     transform: scale(1.05); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
-.project a {
+.project_1 a {
     display: block;
     text-align: center;
     padding: 15px;
@@ -189,7 +189,8 @@ html {scroll-behavior: smooth;}
     border-radius: 0 0 10px 10px;
 }
 
-.project a:hover {
+.project_1 a:hover {
     background-color: #0056b3; 
 }
+
 
