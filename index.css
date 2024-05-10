@@ -157,8 +157,15 @@ h2 {
 
 html {scroll-behavior: smooth;}
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .project_1 {
     width: 200px;
+    min-width: 199px;
     height: 160px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
@@ -195,6 +202,7 @@ html {scroll-behavior: smooth;}
 
 .project_2 {
     width: 200px;
+    min-width: 199px;
     height: 160px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
@@ -231,6 +239,7 @@ html {scroll-behavior: smooth;}
 
 .project_3 {
     width: 200px;
+    min-width: 199px;
     height: 160px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
