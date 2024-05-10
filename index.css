@@ -228,3 +228,39 @@ html {scroll-behavior: smooth;}
 .project_2 a:hover {
     background-color: rgb(176, 108, 40); 
 }
+
+.project_3 {
+    width: 200px;
+    height: 160px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 20px; 
+}
+
+.project_3 h3,
+.project_3 p {
+    text-align: center;
+    padding: 10px;
+}
+
+.project_3:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.project_3 a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: teal; 
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.project_3 a:hover {
+    background-color: rgb(1, 99, 99); 
+}
