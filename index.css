@@ -22,7 +22,9 @@ header h1 {
     position: relative;
     z-index: 1;
     font-size: 50px;
+    font-family: 'Rock Salt', cursive;
 }
+
 @media (max-width: 450px) {
     header h1 {
         font-size: 38px;
@@ -31,7 +33,7 @@ header h1 {
 
 nav {
     background-color: #446076;
-    padding: 10px;
+    padding: 18px;
     text-align: center;
 }
 
@@ -48,7 +50,7 @@ section {
     margin-left: 190px;
     margin-right: 190px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 img {
@@ -224,4 +226,41 @@ html {scroll-behavior: smooth;}
 
 .project_3 a:hover {
     background-color: rgb(1, 99, 99); 
+}
+
+.project_4 {
+    width: 200px;
+    min-width: 199px;
+    height: 160px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 20px; 
+}
+
+.project_4 h3,
+.project_4 p {
+    text-align: center;
+    padding: 10px;
+}
+
+.project_4:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+ 
+.project_4 a {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    background-color: #0077B5;
+    color: #fff; 
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+}
+
+.project_4 a:hover {
+    background-color: #006094;
 }
