@@ -1,304 +1,221 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-}
-
-a:hover {
-    background-color: lightslategray;
-}
-
-header {
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  header {
     background-color: #3a5266;
     color: #fff;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding: 90px 0;
     text-align: center;
-}
-
-header h1 {
-    position: relative;
-    z-index: 1;
+  }
+  
+  header h1 {
     font-size: 50px;
     font-family: 'Rock Salt', cursive;
-}
-
-@media (max-width: 450px) {
+  }
+  
+  @media (max-width: 450px) {
     header h1 {
-        font-size: 38px;
+      font-size: 38px;
     }
-}
-
-nav {
+  }
+  
+  nav {
     background-color: #446076;
     padding: 18px;
     text-align: center;
-}
-
-nav a {
+  }
+  
+  nav a {
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 5px;
-}
+    transition: background-color 0.3s ease;
+  }
+  
+  nav a:hover {
+    background-color: lightslategray;
+  }
 
-section {
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  
+  .skills-list li {
+    background-color: #3a5266;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  
+  section {
     padding: 20px;
-    margin: 20px;
-    margin-left: 190px;
-    margin-right: 190px;
+    margin: 20px auto;
+    max-width: 1000px;
     background-color: #fff;
     border-radius: 15px;
-}
-
-img {
+  }
+  
+  img {
     display: block;
-    margin-left: 10px; 
-    width: 250px; 
-    height: auto; 
+    margin: 10px auto;
+    width: 250px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 767px) {
-    section {
-        margin-left: 0; 
-        margin-right: 0; 
-    }
-}
-
-footer {
+  }
+  
+  h2 {
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 10px;
-    bottom: 0;
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .gallery-grid img {
     width: 100%;
-}
-.social-buttons {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.facebook-button, .linkedin-button, .instagram-button, .github-button {
-display: inline-block;
-padding: 10px 20px;
-background-color: #3b5998;
-color: #fff;
-text-decoration: none;
-border-radius: 5px;
-margin-right: 10px;
-}
-
-.instagram-button {
-background-color: #e4405f; 
-}
-
-.github-button {
-background-color: #333; 
-}
-
-.linkedin-button {
-    background-color: #0077B5; 
-    margin-top: 10px;
-    }
-
-h2 {
-    color: #333;
-    margin-left: 10px;
-}
-
-html {scroll-behavior: smooth;}
-
-.projects {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.project_1 {
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .project-wrapper {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .project-box {
     width: 200px;
-    min-width: 199px;
-    height: 160px;
     background-color: #f0f0f0;
     border: 1px solid #ccc;
     border-radius: 10px;
-    overflow: hidden; 
+    overflow: hidden;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 20px; 
-}
-
-.project_1 h3,
-.project_1 p {
+    margin: 20px;
+  }
+  
+  .project-box h3,
+  .project-box p {
     text-align: center;
     padding: 10px;
-}
-
-.project_1:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.project_1 a {
+  }
+  
+  .project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-box a {
     display: block;
     text-align: center;
     padding: 15px;
-    background-color: #007bff; 
-    color: #fff; 
+    color: #fff;
     text-decoration: none;
     border-radius: 0 0 10px 10px;
-}
-
-.project_1 a:hover {
-    background-color: #0056b3; 
-}
-
-.project_2 {
-    width: 200px;
-    min-width: 199px;
-    height: 160px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 20px; 
-}
-
-.project_2 h3,
-.project_2 p {
+  }
+  
+  /* Description text */
+  .project-wrapper p {
     text-align: center;
-    padding: 10px;
-}
-
-.project_2:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.project_2 a {
-    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+    padding: 0 10px;
+  }
+  
+  /* Project-specific button colors */
+  .project_2 a { background-color: burlywood; }
+  .project_2 a:hover { background-color: rgb(176, 108, 40); }
+  
+  .project_3 a { background-color: teal; }
+  .project_3 a:hover { background-color: rgb(1, 99, 99); }
+  
+  .project_4 a { background-color: #0077B5; }
+  .project_4 a:hover { background-color: #006094; }
+  
+  .project_5 a { background-color: rgb(63, 62, 62); }
+  .project_5 a:hover { background-color: #1b1c1d; }
+  
+  
+  
+  /* Social Buttons */
+  .social-buttons {
     text-align: center;
-    padding: 15px;
-    background-color: burlywood; 
-    color: #fff; 
+    margin-top: 20px;
+  }
+  
+  .facebook-button,
+  .instagram-button,
+  .github-button,
+  .linkedin-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
     text-decoration: none;
-    border-radius: 0 0 10px 10px;
-}
-
-.project_2 a:hover {
-    background-color: rgb(176, 108, 40); 
-}
-
-.project_3 {
-    width: 200px;
-    min-width: 199px;
-    height: 160px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 20px; 
-}
-
-.project_3 h3,
-.project_3 p {
-    text-align: center;
-    padding: 10px;
-}
-
-.project_3:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
-
-.project_3 a {
-    display: block;
-    text-align: center;
-    padding: 15px;
-    background-color: teal; 
-    color: #fff; 
-    text-decoration: none;
-    border-radius: 0 0 10px 10px;
-}
-
-.project_3 a:hover {
-    background-color: rgb(1, 99, 99); 
-}
-
-.project_4 {
-    width: 200px;
-    min-width: 199px;
-    height: 160px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 20px; 
-}
-
-.project_4 h3,
-.project_4 p {
-    text-align: center;
-    padding: 10px;
-}
-
-.project_4:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
- 
-.project_4 a {
-    display: block;
-    text-align: center;
-    padding: 15px;
-    background-color: #0077B5;
-    color: #fff; 
-    text-decoration: none;
-    border-radius: 0 0 10px 10px;
-}
-
-.project_4 a:hover {
-    background-color: #006094;
-}
-
-.project_5 {
-    width: 200px;
-    min-width: 199px;
-    height: 160px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden; 
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    margin: 20px; 
-}
-
-.project_5 h3,
-.project_5 p {
-    text-align: center;
-    padding: 10px;
-}
-
-.project_5:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
- 
-.project_5 a {
-    display: block;
-    text-align: center;
-    padding: 15px;
-    background-color: rgb(63, 62, 62);
-    color: #fff; 
-    text-decoration: none;
-    border-radius: 0 0 10px 10px;
-}
-
-.project_5 a:hover {
-    background-color: #1b1c1d;
-}
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .facebook-button { background-color: #3b5998; }
+  .instagram-button { background-color: #e4405f; }
+  .github-button { background-color: #333; }
+  .linkedin-button { background-color: #0077B5; }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    section {
+      margin: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
