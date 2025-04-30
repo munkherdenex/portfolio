@@ -172,6 +172,19 @@ body {
   .project_5 a { background-color: rgb(63, 62, 62); }
   .project_5 a:hover { background-color: #1b1c1d; }
   
+  .resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #474e6d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+  
+  .resume-button:hover {
+    background-color: #2f3550;
+  }
   
   
   /* Social Buttons */
