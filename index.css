@@ -150,7 +150,6 @@ body {
     border-radius: 0 0 10px 10px;
   }
   
-  /* Description text */
   .project-wrapper p {
     text-align: center;
     margin-top: 10px;
@@ -159,7 +158,6 @@ body {
     padding: 0 10px;
   }
   
-  /* Project-specific button colors */
   .project_2 a { background-color: burlywood; }
   .project_2 a:hover { background-color: rgb(176, 108, 40); }
   
@@ -187,7 +185,6 @@ body {
   }
   
   
-  /* Social Buttons */
   .social-buttons {
     text-align: center;
     margin-top: 20px;
@@ -210,7 +207,6 @@ body {
   .github-button { background-color: #333; }
   .linkedin-button { background-color: #0077B5; }
   
-  /* Responsive layout */
   @media (max-width: 768px) {
     .projects {
       flex-direction: column;
