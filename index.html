@@ -20,24 +20,25 @@
 
   <div class="section-wrapper">
     <section id="about">
-        <h2>About Me</h2>
-        <h3>HI THERE!</h3>
-        <h3>I'm Munkh-Erdene</h3>
-        <p>
-          Passionate and detail-oriented student working towards obtaining a Certificate in Computer Science from MUST - Mongolian University of Science and Technology. I'm someone who finds joy in the simple pleasures of life, whether it's immersing myself in the pages of a captivating book or exploring the great outdoors.
-        </p>
-      
-        <h4>Skills & Tools:</h4>
-        <ul class="skills-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>PostgreSQL</li>
-          <li>Backend Development</li>
-        </ul>
-      </section>
-      
+      <h2>About Me</h2>
+      <h3>HI THERE!</h3>
+      <h3>I'm Munkh-Erdene</h3>
+      <p id="about-en-text">
+        Passionate and detail-oriented student working towards obtaining a Certificate in Computer Science from MUST - Mongolian University of Science and Technology. I'm someone who finds joy in the simple pleasures of life, whether it's immersing myself in the pages of a captivating book or exploring the great outdoors.
+      </p>
+      <p id="about-mn-text" style="display:none;">
+        Сайн уу, би Мөнх-Эрдэнэ. Би Монголын Шинжлэх Ухаан, Технологийн Их Сургуульд Компьютерийн Шинжлэх Ухааны гэрчилгээ авахад ажиллаж байгаа, нарийн нямбай оюутан. Би амьдралын энгийн жаргалд дуртай, магадгүй энэ нь сонирхолтой ном унших эсвэл байгалийн сайхныг судлахад оршино.
+      </p>
+      <h4>Skills & Tools:</h4>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>PostgreSQL</li>
+        <li>Backend Development</li>
+      </ul>
+    </section>
   </div>
 
   <section id="gallery">
@@ -52,55 +53,73 @@
       <img src="img/photo7.jpg" alt="Photo 7" />
       <img src="img/photo8.JPG" alt="Photo 8" />
       <img src="img/IMG_2409.jpg" alt="A photo of Munkh-Erdene" />
-
     </div>
   </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="projects">
-      <div class="project-wrapper">
-        <div class="project-box project_2">
-          <h3>Date</h3>
-          <a href="https://munkherdenex.github.io/date.github.io/" target="_blank">Visit Project</a>
-        </div>
-        <p>A playful and interactive webpage built with HTML, CSS, and JavaScript</p>
+<section id="projects">
+  <button id="lang-toggle" onclick="toggleLanguage()">Switch to Mongolian</button>
+
+  <h2>My Projects</h2>
+  <div class="projects">
+    
+    <div class="project-wrapper">
+      <div class="project-box project_2">
+        <h3>Date</h3>
+        <a href="https://munkherdenex.github.io/date.github.io/" target="_blank">Visit Project</a>
       </div>
-  
-      <div class="project-wrapper">
-        <div class="project-box project_3">
-          <h3>Essay V.2</h3>
-          <a href="https://munkherdenex.github.io/essay/" target="_blank">Visit Project</a>
-        </div>
-        <p>essay.gereesee is a simple and lightweight site where you can read various essays in Mongolian. It allows you to search for essays, read them on various topics, and save time.</p>
+      <p id="projects-en-text-1">A playful and interactive webpage built with HTML, CSS, and JavaScript</p>
+      <p id="projects-mn-text-1" style="display:none;">
+        HTML, CSS, JavaScript ашиглан бүтээсэн хөгжилтэй, интерактив вэб хуудас
+      </p>
+    </div>
+
+    <div class="project-wrapper">
+      <div class="project-box project_3">
+        <h3>Essay V.2</h3>
+        <a href="https://munkherdenex.github.io/essay/" target="_blank">Visit Project</a>
       </div>
-  
-      <div class="project-wrapper">
-        <div class="project-box project_4">
-          <h3>Dairy Product Web</h3>
-          <a href="https://munkherdenex.github.io/Suu/" target="_blank">Visit Project</a>
-        </div>
-        <p>A simple landing page for a dairy business, showcasing products and emphasizing a traditional Mongolian theme.</p>
+      <p id="projects-en-text-2">essay.gereesee is a simple and lightweight site where you can read various essays in Mongolian. It allows you to search for essays, read them on various topics, and save time.</p>
+      <p id="projects-mn-text-2" style="display:none;">
+        essay.gereesee нь Монгол хэл дээрх олон төрлийн эссэ унших боломжтой энгийн вэбсайт юм.
+      </p>
+    </div>
+
+    <div class="project-wrapper">
+      <div class="project-box project_4">
+        <h3>Dairy Product Web</h3>
+        <a href="https://munkherdenex.github.io/Suu/" target="_blank">Visit Project</a>
       </div>
-  
-      <div class="project-wrapper">
-        <div class="project-box project_5">
-          <h3>TicTac Toe</h3>
-          <a href="https://munkherdenex.github.io/tic-tac-toe/" target="_blank">Visit Project</a>
-        </div>
-        <p>Classic Tic Tac Toe game with basic logic and a clean, responsive interface using HTML/CSS/JS.</p>
+      <p id="projects-en-text-3">A simple landing page for a dairy business, showcasing products and emphasizing a traditional Mongolian theme.</p>
+      <p id="projects-mn-text-3" style="display:none;">
+        Сүүний үйлдвэр танилцуулсан энгийн landing хуудас.
+      </p>
+    </div>
+
+    <div class="project-wrapper">
+      <div class="project-box project_5">
+        <h3>TicTac Toe</h3>
+        <a href="https://munkherdenex.github.io/tic-tac-toe/" target="_blank">Visit Project</a>
       </div>
-      <div class="project-wrapper">
+      <p id="projects-en-text-4">Classic Tic Tac Toe game with basic logic and a clean, responsive interface using HTML/CSS/JS.</p>
+      <p id="projects-mn-text-4" style="display:none;">
+        Классик Tic Tac Toe тоглоом, үндсэн логик болон HTML/CSS/JS ашиглан хялбар, хариу үйлдэлтэй, сайжруулсан интерфэйс бүхий.
+      </p>
+    </div>
+
+    <div class="project-wrapper">
       <div class="project-box project_diploma">
         <h3>Mongolian Agricultural Trade Platform</h3>
         <a href="https://mongolian-agriculture-trade.vercel.app/" target="_blank">Visit Project</a>
       </div>
-      <p>A modern web platform that simplifies agricultural trade in Mongolia by connecting farmers and buyers directly. Built with React, Node.js, PostgreSQL, and deployed on Vercel and Render.</p>
+      <p id="projects-en-text-5">A modern web platform that simplifies agricultural trade in Mongolia by connecting farmers and buyers directly. Built with React, Node.js, PostgreSQL, and deployed on Vercel and Render.</p>
+      <p id="projects-mn-text-5" style="display:none;">
+        Монголд хөдөө аж ахуйн худалдааг хөнгөвчлөх зорилготой, фермерүүд болон худалдан авагчдыг шууд холбосон орчин үеийн вэб платформ. React, Node.js, PostgreSQL ашиглан бүтээгдэж, Vercel болон Render дээр байршуулсан.
+      </p>
     </div>
-    </div>
-  </section>
-  
-  
+
+  </div>
+</section>
+
 
   <section id="contact">
     <h2>Contact</h2>
@@ -120,5 +139,7 @@
   <footer>
     <p>&copy; 2025 My Portfolio</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

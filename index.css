@@ -45,6 +45,20 @@ body {
     background-color: lightslategray;
   }
 
+  #lang-toggle {
+  padding: 10px 20px;
+  background-color: #446076;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#lang-toggle:hover {
+  background-color: #587b96;
+}
+
+
   .skills-list {
     list-style: none;
     padding: 0;
