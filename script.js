@@ -1,4 +1,7 @@
 function toggleLanguage() {
+  const projectsintroen = document.getElementById("projects-intro-en");
+  const projectsintromn = document.getElementById("projects-intro-mn");
+
   const projectsEnText1 = document.getElementById("projects-en-text-1");
   const projectsMnText1 = document.getElementById("projects-mn-text-1");
 
@@ -16,16 +19,17 @@ function toggleLanguage() {
 
   const toggleButton = document.getElementById("lang-toggle");
 
+  toggleText(projectsintroen, projectsintromn);
   toggleText(projectsEnText1, projectsMnText1);
   toggleText(projectsEnText2, projectsMnText2);
   toggleText(projectsEnText3, projectsMnText3);
   toggleText(projectsEnText4, projectsMnText4);
   toggleText(projectsEnText5, projectsMnText5);
 
-  if (toggleButton.innerHTML === "Switch to Mongolian") {
+  if (toggleButton.innerHTML === "Монгол хэл рүү шилжих") {
     toggleButton.innerHTML = "Switch to English";
   } else {
-    toggleButton.innerHTML = "Switch to Mongolian";
+    toggleButton.innerHTML = "Монгол хэл рүү шилжих";
   }
 }
 
