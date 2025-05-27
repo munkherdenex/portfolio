@@ -169,6 +169,10 @@ body {
   
   .project_5 a { background-color: rgb(63, 62, 62); }
   .project_5 a:hover { background-color: #1b1c1d; }
+
+  .project_diploma a { background-color: #4CAF50; }
+  .project_diploma a:hover { background-color: #45a049; }
+
   
   .resume-button {
     display: inline-block;
@@ -200,6 +204,7 @@ body {
     text-decoration: none;
     border-radius: 5px;
     margin-right: 10px;
+    margin-top: 20px;
   }
   
   .facebook-button { background-color: #3b5998; }
